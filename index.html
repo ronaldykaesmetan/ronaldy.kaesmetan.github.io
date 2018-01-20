@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ronaldy Kaesmetan</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="nav">
+        <a class="a active" href="#">HOME</a>
+        <a class="b" href="#">ABOUT ME</a>
+        <a class="c" href="#">GALLERY</a>
+        <a class="d" href="#">CONTACT</a>
+      </div>
+      <div class="content">
+        <div class="home">
+          <h1>I am Ronaldy Kaesmetan</h1>
+          <h3>Information Management &amp; Audit Enthusiast</h3>
+        </div>
+        <div class="aboutme">
+          <p> <b>Hi Folks</b><br>I am Former Internal Auditor of AIESEC Indonesia and alumni of Temasek Foundation SCALE 2015. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="gallery">
+          <div class="img">
+            <img src="img/1.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="img/2.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="img/3.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="img/4.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="img/5.jpg" alt="">
+          </div>
+          <div class="img">
+            <img src="img/6.jpg" alt="">
+          </div>
+        </div>
+        <div class="contact">
+          <div class="form">
+            <form class="" action="index.html" method="post">
+              <input type="text" class="inputtext" name="" value="" placeholder="Name">
+              <input type="text" class="inputtext" name="" value="" placeholder="Email">
+              <textarea name="name" rows="8" cols="80" class="inputmessage" placeholder="Your Message!!"></textarea>
+              <input type="submit" class="submitbutton" name="" value="SUBMIT">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('a').click(function(){
+          // alert("I am click");
+          var selected = $(this);
+          $('a').removeClass('active');
+          $(selected).addClass('active');
+        });
+        var $a=$('.a'),
+        $b=$('.b'),
+        $c=$('.c'),
+        $d=$('.d'),
+        $home=$('.home');
+        $aboutme=$(".aboutme");
+        $gallery=$('.gallery');
+        $contact=$(".contact");
+        $a.click(function(){
+          $home.fadeIn();
+          $aboutme.fadeOut();
+          $gallery.fadeOut();
+          $contact.fadeOut();
+        });
+        $b.click(function(){
+          $home.fadeOut();
+          $aboutme.fadeIn();
+          $gallery.fadeOut();
+          $contact.fadeOut();
+        });
+        $c.click(function(){
+          $home.fadeOut();
+          $aboutme.fadeOut();
+          $gallery.fadeIn();
+          $contact.fadeOut();
+        });
+        $d.click(function(){
+          $home.fadeOut();
+          $aboutme.fadeOut();
+          $gallery.fadeOut();
+          $contact.fadeIn();
+        });
+      });
+
+
+    </script>
+  </body>
+</html>
